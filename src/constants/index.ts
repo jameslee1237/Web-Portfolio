@@ -11,3 +11,15 @@ export const experiences = [
     },
 ]
 
+export const TAB_DATA = [
+    {
+        title: "Skill",
+        id: "skills",
+        content: ["Next.js", "Typescript", "CSS", "MySQL"]
+    },
+    {
+        title: "Education",
+        id: "education",
+        content: "University College London"
+    },
+]

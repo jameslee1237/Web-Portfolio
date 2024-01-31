@@ -2,32 +2,31 @@
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
 import ExpCard from "./ExpCard";
-import { experiences } from "@/constants";
-
-const TAB_DATA = [
-    {
-      title: "Skills",
-      id: "skills",
-      content: (
-        <ul>
-          <li>Node.js</li>
-          <li>React</li>
-          <li>MySQL</li>
-          <li>Typescript</li>
-          <li>CSS</li>
-        </ul>
-      ),
-    },
-    {
-        title: "Education",
-        id: "education",
-        content: (
-          <ul>
-            <li>Universit College London</li>
-          </ul>
-        ),
-    },
-]
+import { experiences, TAB_DATA } from "@/constants";
+// const TAB_DATA = [
+//     {
+//       title: "Skills",
+//       id: "skills",
+//       content: (
+//         <ul>
+//           <li>Node.js</li>
+//           <li>React</li>
+//           <li>MySQL</li>
+//           <li>Typescript</li>
+//           <li>CSS</li>
+//         </ul>
+//       ),
+//     },
+//     {
+//         title: "Education",
+//         id: "education",
+//         content: (
+//           <ul>
+//             <li>University College London</li>
+//           </ul>
+//         ),
+//     },
+// ]
 
 const About = () => {
     const [tab, setTab] = useState<string>("skills");
