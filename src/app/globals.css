@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link {
+        @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block
+        after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0
+        after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
+    }
+
+    .Nav {
+        position: sticky;
+        z-index: 1000;
+    }
+
+    .back-to-home-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+      
+    .back-to-home-button:hover {
+        background-color: #0056b3;
+    }
+
+    .flip-card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+    
+    
+}
+
+
+
