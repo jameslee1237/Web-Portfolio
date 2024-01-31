@@ -23,3 +23,10 @@ export const TAB_DATA = [
         content: ["University College London", "HELP College"]
     },
 ]
+
+export const skill_level = [
+    '45%',
+    '55%',
+    '65%',
+    '35%',
+]

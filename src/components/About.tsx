@@ -2,10 +2,11 @@
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
 import ExpCard from "./ExpCard";
-import { experiences, TAB_DATA } from "@/constants";
+import { experiences, TAB_DATA, skill_level } from "@/constants";
 
 const About = () => {
     const [tab, setTab] = useState<string>("skills");
+    const level = skill_level;
 
     const handleTabChange = (id: string) => {
         setTab(id);
@@ -39,13 +40,13 @@ const About = () => {
                             ))}       
                         </div>
                         <div className="mt-4 text-white">
-                            {TAB_DATA.find((t) => t.id === tab)?.content.map((item) => (
+                            {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
                                 tab === "skills" ? (
                                     <div key={item} className="relative mb-[1rem]">
                                         <h1 className="p-3 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
                                             {item}
                                         </h1>
-                                        <span className="absolute bottom-0 left-0 bg-green-500" style={{width:'50%', height: '4px'}}></span>
+                                        <span key={item} className="absolute bottom-0 left-0 bg-green-500" style={{width: level[index], height:"4px"}}></span>
                                     </div>
                                 ) : (
                                     <p>{item}</p>
