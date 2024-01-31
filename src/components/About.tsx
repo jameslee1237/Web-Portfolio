@@ -3,30 +3,7 @@ import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
 import ExpCard from "./ExpCard";
 import { experiences, TAB_DATA } from "@/constants";
-// const TAB_DATA = [
-//     {
-//       title: "Skills",
-//       id: "skills",
-//       content: (
-//         <ul>
-//           <li>Node.js</li>
-//           <li>React</li>
-//           <li>MySQL</li>
-//           <li>Typescript</li>
-//           <li>CSS</li>
-//         </ul>
-//       ),
-//     },
-//     {
-//         title: "Education",
-//         id: "education",
-//         content: (
-//           <ul>
-//             <li>University College London</li>
-//           </ul>
-//         ),
-//     },
-// ]
+
 
 const About = () => {
     const [tab, setTab] = useState<string>("skills");
@@ -52,18 +29,28 @@ const About = () => {
                     </p>
                     <div>
                         <div>
-                        {TAB_DATA.map((tabItem) => (
-                            <TabButton 
-                             key={tabItem.id}
-                             selectTab={() => handleTabChange(tabItem.id)}
-                             active={tab === tabItem.id}
-                            >
-                                {tabItem.title}
-                            </TabButton>
-                        ))}       
+                            {TAB_DATA.map((tabItem) => (
+                                <TabButton 
+                                 key={tabItem.id}
+                                 selectTab={() => handleTabChange(tabItem.id)}
+                                 active={tab === tabItem.id}
+                                >
+                                    {tabItem.title}
+                                </TabButton>
+                            ))}       
                         </div>
                         <div className="mt-4 text-white">
-                            {TAB_DATA.find((t) => t.id === tab)?.content}
+                            {TAB_DATA.find((t) => t.id === tab)?.content.map((item) => (
+                                tab === "skills" ? (
+                                    <div className="relative mb-[1rem]">
+                                        <h1 className="p-3 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+                                            {item}
+                                        </h1>
+                                    </div>
+                                ) : (
+                                    <li>{item}</li>
+                                )
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -39,9 +39,11 @@ const ExpCard = ({
                 <div
                  className="w-full h-full group absolute bg-[#cf9595] flip-card-back bg-cover bg-center text-white text-center rounded-lg p-4">
                     <p>{experience.summary}</p>
-                    <Link href={`/experience/${experience.id}`}>
-                        <span>Learn more</span>
-                    </Link>
+                    <div  className='absolute inset-0 flex items-center justify-center rounded-md bg-black opacity-0 group-hover:opacity-40'>
+                        <Link href={`/experience/${experience.id}`}>
+                            <span>Learn more</span>
+                        </Link>
+                    </div>
                 </div>
             </motion.div>
         </div>
