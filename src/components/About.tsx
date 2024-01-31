@@ -13,7 +13,8 @@ const TAB_DATA = [
           <li>Node.js</li>
           <li>React</li>
           <li>MySQL</li>
-          
+          <li>Typescript</li>
+          <li>CSS</li>
         </ul>
       ),
     },
@@ -71,9 +72,9 @@ const About = () => {
                     <h1 className="text-[30px] md:text-[40px] mb-4 text-white font-bold text-center">
                         Experience
                     </h1>
-                    <div className="flex justify-center space-x-40"> 
+                    <div className="flex flex-col items-center"> 
                         {experiences.map((experience) => (
-                        <ExpCard key={experience.id} experience={experience} />
+                            <ExpCard key={experience.id} experience={experience}/>
                         ))}
                     </div>
                 </div>
