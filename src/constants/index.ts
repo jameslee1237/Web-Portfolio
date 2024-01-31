@@ -2,7 +2,7 @@ export const experiences = [
     {
         id: "1",
         title: "Database Administrator",
-        summary: "summary of exp 1",
+        summary: `simple summary of exp 1`,
     },
     {
         id: "2",
