@@ -20,6 +20,6 @@ export const TAB_DATA = [
     {
         title: "Education",
         id: "education",
-        content: ["University College London"]
+        content: ["University College London", "HELP College"]
     },
 ]
