@@ -30,3 +30,22 @@ export const skill_level = [
     '65%',
     '35%',
 ]
+
+export const projects = [
+    {
+        id: "1",
+        image: "Image1",
+    },
+    {
+        id: "2",
+        image: "Image2",
+    },
+    {
+        id: "3",
+        image: "Image3",
+    },
+    {
+        id: "4",
+        image: "Image4",
+    },
+]
