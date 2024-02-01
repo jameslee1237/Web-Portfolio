@@ -1,15 +1,9 @@
 "use client";
 import React from 'react';
-import { useRouter } from 'next/navigation';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/constants';
 
 const Project = () => {
-    const router = useRouter();
-    // const handleClick = () => {
-    //     router.push(`/project/${id}`)
-    // }
-
     return (
         <div className="bg-[#30689f] pt-[4rem] md:pt-[8rem] pb-[12rem]">
             <h1 className="text-center text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] uppercase mb-[3rem] 
