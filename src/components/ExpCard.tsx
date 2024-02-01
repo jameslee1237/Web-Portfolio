@@ -1,6 +1,7 @@
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+
 
 const ExpCard = ({ 
     experience,
@@ -13,12 +14,17 @@ const ExpCard = ({
 }) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
+    const router = useRouter();
 
     function handleFlip() {
         if (!isAnimating) {
             setIsFlipped(!isFlipped);
             setIsAnimating(true);
         }
+    }
+
+    const handleClick = () => {
+        router.push(`/experience/${experience.id}`)
     }
 
     return (
@@ -40,9 +46,7 @@ const ExpCard = ({
                  className="w-full h-full group absolute bg-[#cf9595] flip-card-back bg-cover bg-center text-white text-center rounded-lg p-4">
                     <p>{experience.summary}</p>
                     <div  className='absolute inset-0 flex items-center justify-center rounded-md bg-black opacity-0 group-hover:opacity-40'>
-                        <Link href={`/experience/${experience.id}`}>
-                            <span>Learn more</span>
-                        </Link>
+                        <button onClick={handleClick}>Learn more</button>
                     </div>
                 </div>
             </motion.div>

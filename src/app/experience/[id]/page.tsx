@@ -8,8 +8,12 @@ export default function ExperienceDetailPage() {
 
   return (
     <div>
-      <h1>{experienceDetails.title}</h1>
-      <p>{experienceDetails.description}</p>
+      <div className="text-white text-4xl font-bold mt-16 mb-8">
+        <h1>{experienceDetails.title}</h1>
+      </div>
+      <div className="text-white text-[20px]">
+        <p>{experienceDetails.description}</p>
+      </div>  
     </div>
   );
 };
