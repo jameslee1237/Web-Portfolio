@@ -11,7 +11,7 @@ export default function ExperienceDetailPage({
   const experienceDetail = experienceDetails.find((t) => t.id === params.id);
 
   if (!experienceDetail) {
-    return <div>Experience not found</div>;
+    return <div className="text-white text-[40px] text-center font-bold">Experience not found</div>;
   }
   
   const { title, description } = experienceDetail;

@@ -11,7 +11,7 @@ export default function ProjectDetailPage({
     const ProjectDetail = projectDetails.find((t) => t.id === params.id);
 
     if (!ProjectDetail) {
-        return <div>Project not found</div>
+        return <div className="text-white text-[40px] text-center font-bold">Project not found</div>
     }
 
     const { title, description } = ProjectDetail;
