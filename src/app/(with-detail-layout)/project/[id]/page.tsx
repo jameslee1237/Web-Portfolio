@@ -8,8 +8,13 @@ export default function ProjectDetailPage({
         id: string;
     }
 }) {
-    const title = projectDetails.find((t) => t.id === params.id)?.title;
-    const description = projectDetails.find((t) => t.id === params.id)?.description;
+    const ProjectDetail = projectDetails.find((t) => t.id === params.id);
+
+    if (!ProjectDetail) {
+        return <div>Project not found</div>
+    }
+
+    const { title, description } = ProjectDetail;
 
     return (
         <div className="text-center">

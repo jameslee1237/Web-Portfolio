@@ -8,8 +8,13 @@ export default function ExperienceDetailPage({
     id: string;
   };
 }) {
-  const title = experienceDetails.find((t) => t.id === params.id)?.title;
-  const description = experienceDetails.find((t) => t.id === params.id)?.description;
+  const experienceDetail = experienceDetails.find((t) => t.id === params.id);
+
+  if (!experienceDetail) {
+    return <div>Experience not found</div>;
+  }
+  
+  const { title, description } = experienceDetail;
 
   return (
     <div className="text-center">
