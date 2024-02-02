@@ -49,3 +49,39 @@ export const projects = [
         image: "Image4",
     },
 ]
+
+export const experienceDetails = [
+    {
+        id: "1",
+        title: "Database Administrator",
+        description: "Simple summary 1"
+    },
+    {
+        id: "2",
+        title: "Software Engineer",
+        description: "Simple summary 2"
+    },
+]
+
+export const projectDetails = [
+    {
+        id: "1",
+        title: 'Project 1',
+        description: "Summary of project 1"
+    },
+    {
+        id: "2",
+        title: 'Project 2',
+        description: "Summary of project 2"
+    },
+    {
+        id: "3",
+        title: 'Project 3',
+        description: "Summary of project 3"
+    },
+    {
+        id: "4",
+        title: 'Project 4',
+        description: "Summary of project 4"
+    }
+]
