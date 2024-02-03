@@ -15,7 +15,7 @@ export const TAB_DATA = [
     {
         title: "Skill",
         id: "skills",
-        content: ["Next.js", "Typescript", "CSS", "MySQL"]
+        content: ["Next.js", "Typescript", "CSS", "MySQL", "Tensorflow"]
     },
     {
         title: "Education",
@@ -29,6 +29,7 @@ export const skill_level = [
     '55%',
     '65%',
     '35%',
+    '50%',
 ]
 
 export const projects = [
