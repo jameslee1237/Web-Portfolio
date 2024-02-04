@@ -67,7 +67,14 @@ export const experienceDetails = [
     {
         id: "2",
         title: "Software Engineer",
-        description: "Simple summary 2"
+        description: [`Responsible for development of software allowing management and access to certain data
+                       company holds`,
+                      `Trained staffs in overall usage of software including installation, error detection and 
+                       production of instructional manuals`, 
+                      `Interact with staffs during development to update requirements, give feedback on testing 
+                       procedures and ensure final product met operational targets`
+                     ],
+        src: ["/ExpIcon1.png", "/ExpIcon2.png"]
     },
 ]
 
