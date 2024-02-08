@@ -27,33 +27,6 @@ const About = () => {
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                    <div>
-                        <div>
-                            {TAB_DATA.map((tabItem) => (
-                                <TabButton 
-                                 key={tabItem.id}
-                                 selectTab={() => handleTabChange(tabItem.id)}
-                                 active={tab === tabItem.id}
-                                >
-                                    {tabItem.title}
-                                </TabButton>
-                            ))}       
-                        </div>
-                        <div className="mt-4 text-white">
-                            {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
-                                tab === "skills" ? (
-                                    <div key={item} className="relative mb-[1rem]">
-                                        <h1 className="p-3 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
-                                            {item}
-                                        </h1>
-                                        <span key={item} className="absolute bottom-0 left-0 bg-green-500" style={{width: level[index], height:"4px"}}></span>
-                                    </div>
-                                ) : (
-                                    <p>{item}</p>
-                                )
-                            ))}
-                        </div>
-                    </div>
                 </div>
                 <div className="lg:w-[700px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
                     <h1 className="text-[30px] md:text-[40px] mb-4 text-white font-bold text-center">
@@ -64,6 +37,47 @@ const About = () => {
                             <ExpCard key={experience.id} experience={experience}/>
                         ))}
                     </div>
+                </div>
+            </div>
+            <div className="ml-[150px] w-[85%]">
+                <div className="text-[20px]">
+                    {TAB_DATA.map((tabItem) => (
+                        <TabButton 
+                         key={tabItem.id}
+                         selectTab={() => handleTabChange(tabItem.id)}
+                         active={tab === tabItem.id}
+                        >
+                            {tabItem.title}
+                        </TabButton>
+                    ))}       
+                </div>
+                <div className="text-white">
+                    {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
+                        tab === "skills" ? (
+                            index % 2 === 0 ? (
+                                <div key={item + index} className="flex flex-row mb-[1rem]">
+                                    <div className="relative mr-4" style={{ width: "600px"}}>
+                                        <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white text-[20px] font-bold overflow-hidden">
+                                            {item}
+                                        </h1>
+                                        <span className="absolute bottom-0 left-0 bg-green-500" style={{ width: level[index], height:"4px"}}></span>
+                                    </div>
+                                    {TAB_DATA.find((t) => t.id === tab)?.content[index + 1] && (
+                                        <div className="relative mr-4" style={{ width: "600px"}}>
+                                            <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white text-[20px] font-bold overflow-hidden">
+                                                {TAB_DATA.find((t) => t.id === tab)?.content[index + 1]}
+                                            </h1>
+                                            <span className="absolute bottom-0 left-0 bg-green-500" style={{ width: level[index + 1], height:"4px"}}></span>
+                                        </div>
+                                    )}
+                                </div>
+                            ) : null
+                        ) : (
+                            <div key={item} className="relative mb-[1rem]">
+                                <p>{item}</p>
+                            </div>
+                        )
+                    ))}
                 </div>
             </div>
         </div>

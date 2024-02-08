@@ -2,12 +2,12 @@ export const experiences = [
     {
         id: "1",
         title: "Database Administrator",
-        summary: `Simple summary`,
+        summary: `I worked as a database administrator for a year and a half in the Korean military.`,
     },
     {
         id: "2",
         title: "Software Engineer",
-        summary: "summary of exp 2",
+        summary: "I worked as a software engineer for 4 months in NSKorea utilizing tkinter to build a simple system",
     },
 ]
 
@@ -15,7 +15,7 @@ export const TAB_DATA = [
     {
         title: "Skill",
         id: "skills",
-        content: ["Next.js", "Typescript", "CSS", "MySQL", "Tensorflow"]
+        content: ["Next.js", "Typescript", "CSS", "MySQL", "Tensorflow", "Python", "Docker"]
     },
     {
         title: "Education",
@@ -30,6 +30,8 @@ export const skill_level = [
     '65%',
     '35%',
     '50%',
+    "80%",
+    '70%'
 ]
 
 export const projects = [
