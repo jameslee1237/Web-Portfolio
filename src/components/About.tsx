@@ -42,15 +42,13 @@ const About = () => {
                         Experience
                     </h1>
                     <div className="flex flex-col items-center overflow-hidden"> 
-                        {/* {experiences.map((experience) => (
-                            <ExpCard key={experience.id} experience={experience}/>
-                        ))} */}
                         <VerticalTimeline>
                             {experiences.map((experience) => (
                                 <VerticalTimelineElement
                                  key={experience.id}
                                  className="vertical-timeline-element--work"
-                                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}
+                                 dateClassName="ml-4 mr-4"
                                  contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                                  date={experience.date}
                                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
