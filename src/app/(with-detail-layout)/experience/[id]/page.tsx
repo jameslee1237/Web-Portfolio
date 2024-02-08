@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import { experienceDetails } from '@/constants';
-import RespCard from '@/components/RespCard';
 
 export default function ExperienceDetailPage({ 
   params 
@@ -16,22 +15,20 @@ export default function ExperienceDetailPage({
     return <div className="text-white text-[40px] text-center font-bold">Experience not found</div>;
   }
   
-  const { title, description, src } = experienceDetail;
-  const combinedList: {description: string, src: string}[] = [];
+  const { title, description, Date, Hire } = experienceDetail;
+  const combinedList: {description: string}[] = [];
 
-  if (Array.isArray(description) && Array.isArray(src)) {
-    const maxLength = Math.max(description.length, src.length);
+  if (Array.isArray(description)) {
+    const maxLength = Math.max(description.length);
 
     for (let i = 0; i < maxLength; i++) {
         const descItem = description[i] ?? ''; 
-        const srcItem = src[i] ?? ''; 
-        combinedList.push({description: descItem, src: srcItem});
+        combinedList.push({description: descItem});
     }
   } 
   else {
     const descItem = Array.isArray(description) ? description[0] ?? '' : description ?? '';
-    const srcItem = Array.isArray(src) ? src[0] ?? '' : src ?? '';
-    combinedList.push({description: descItem, src: srcItem});
+    combinedList.push({description: descItem});
   }
  
   
@@ -58,7 +55,10 @@ export default function ExperienceDetailPage({
         <div className="w-1/2">
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
             <div className="items-center w-full">
-              <p>-SOMETHING-</p>
+              <h1 className="text-[30px] font-bold">Date</h1>
+              <p>{Date}</p>
+              <h1 className="text-[30px] font-bold mt-8">Hired By</h1>
+              <p>{Hire}</p>
             </div>
           </div>
         </div>

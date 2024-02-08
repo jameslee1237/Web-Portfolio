@@ -2,7 +2,7 @@ export const experiences = [
     {
         id: "1",
         title: "Database Administrator",
-        summary: `simple summary of exp 1`,
+        summary: `Simple summary`,
     },
     {
         id: "2",
@@ -62,7 +62,8 @@ export const experienceDetails = [
                        "Utilize various software and hardware for configuration of new devices and maintenance of existing computers and devices.",
                        "Train other members in security policies and procedures",
                      ],
-        src: ["/ExpIcon1.png", "/ExpIcon2.png"]
+        Date: "August 2020 to February 2022",
+        Hire: "Republic of Korea Army"
     },
     {
         id: "2",
@@ -74,7 +75,8 @@ export const experienceDetails = [
                       `Interact with staffs during development to update requirements, give feedback on testing 
                        procedures and ensure final product met operational targets`
                      ],
-        src: ["/ExpIcon1.png", "/ExpIcon2.png"]
+        Date: "April 2022 to July 2022",
+        Hire: "NSKorea"
     },
 ]
 
