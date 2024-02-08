@@ -2,12 +2,14 @@ export const experiences = [
     {
         id: "1",
         title: "Database Administrator",
-        summary: `I worked as a database administrator for a year and a half in the Korean military.`,
+        summary: `MySQL`,
+        date: "Jul 2020 - Feb 2022"
     },
     {
         id: "2",
         title: "Software Engineer",
-        summary: "I worked as a software engineer for 4 months in NSKorea utilizing tkinter to build a simple system",
+        summary: "Python | tkinter",
+        date: "Apr 2022 - Jul 2022"
     },
 ]
 

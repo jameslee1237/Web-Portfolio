@@ -1,12 +1,21 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
-import ExpCard from "./ExpCard";
+import { useRouter } from "next/navigation";
 import { experiences, TAB_DATA, skill_level } from "@/constants";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import TerminalIcon from '@mui/icons-material/Terminal';
+
 
 const About = () => {
     const [tab, setTab] = useState<string>("skills");
     const level = skill_level;
+    const router = useRouter();
+
+    const handleClick = (Expid: string) => {
+        router.push(`/experience/${Expid}`)
+    }
 
     const handleTabChange = (id: string) => {
         setTab(id);
@@ -32,10 +41,30 @@ const About = () => {
                     <h1 className="text-[30px] md:text-[40px] mb-4 text-white font-bold text-center">
                         Experience
                     </h1>
-                    <div className="flex flex-col items-center"> 
-                        {experiences.map((experience) => (
+                    <div className="flex flex-col items-center overflow-hidden"> 
+                        {/* {experiences.map((experience) => (
                             <ExpCard key={experience.id} experience={experience}/>
-                        ))}
+                        ))} */}
+                        <VerticalTimeline>
+                            {experiences.map((experience) => (
+                                <VerticalTimelineElement
+                                 key={experience.id}
+                                 className="vertical-timeline-element--work"
+                                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                                 date={experience.date}
+                                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                 icon={<TerminalIcon />}
+                                 iconOnClick={() => handleClick(experience.id)}
+                                 visible={true}
+                                >
+                                    <h3 className="vertical-timeline-element-title">{experience.title}</h3>
+                                    <p>
+                                        {experience.summary}
+                                    </p>
+                                </VerticalTimelineElement>
+                            ))}
+                        </VerticalTimeline>
                     </div>
                 </div>
             </div>
