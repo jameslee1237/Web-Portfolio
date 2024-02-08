@@ -2,7 +2,7 @@ export const experiences = [
     {
         id: "1",
         title: "Database Administrator",
-        summary: `MySQL`,
+        summary: `MySQL | MongoDB`,
         date: "Jul 2020 - Feb 2022"
     },
     {

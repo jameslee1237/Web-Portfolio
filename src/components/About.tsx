@@ -52,6 +52,7 @@ const About = () => {
                                  contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                                  date={experience.date}
                                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                 iconClassName="hover:scale-110"
                                  icon={<TerminalIcon />}
                                  iconOnClick={() => handleClick(experience.id)}
                                  visible={true}
