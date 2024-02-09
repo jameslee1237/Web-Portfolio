@@ -68,7 +68,7 @@ export const experienceDetails = [
                      ],
         Date: "August 2020 to February 2022",
         Hire: "Republic of Korea Army",
-        src:  ["/ExpIcon1.png", "/ExpIcon2.png"]
+        src:  ["/ExpIcon1.png", "/ExpIcon2.png", "/ExpIcon3.png", "/ExpIcon4.png", "/ExpIcon5.png"]
     },
     {
         id: "2",
@@ -82,7 +82,7 @@ export const experienceDetails = [
                      ],
         Date: "April 2022 to July 2022",
         Hire: "NSKorea",
-        src: []
+        src: ["/ExpIcon6.png", "/ExpIcon7.png", "/ExpIcon8.png"]
     },
 ]
 
