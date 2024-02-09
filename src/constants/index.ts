@@ -67,7 +67,8 @@ export const experienceDetails = [
                        "Train other members in security policies and procedures",
                      ],
         Date: "August 2020 to February 2022",
-        Hire: "Republic of Korea Army"
+        Hire: "Republic of Korea Army",
+        src:  ["/ExpIcon1.png", "/ExpIcon2.png"]
     },
     {
         id: "2",
@@ -80,7 +81,8 @@ export const experienceDetails = [
                        procedures and ensure final product met operational targets`
                      ],
         Date: "April 2022 to July 2022",
-        Hire: "NSKorea"
+        Hire: "NSKorea",
+        src: []
     },
 ]
 

@@ -18,7 +18,7 @@ export default function ExperienceDetailLayout ({
                     </h1>
                 </div>
             </div>
-            <div className="h-[88vh] bg-[#63abd4] flex flex-col items-center">
+            <div className="h-[100%] bg-[#63abd4] flex flex-col items-center">
                 {children}
             </div>
             <BackToHomeButton />
