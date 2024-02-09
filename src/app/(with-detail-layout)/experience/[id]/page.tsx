@@ -45,13 +45,6 @@ export default function ExperienceDetailPage({
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
             <div className="items-center w-full">
               <h1 className="text-[30px] font-bold mb-8">Responsibilities</h1>
-              {/* {Array.isArray(description) ? (
-                description.map((desc) => (
-                  <p className="text-left ml-8" key={desc}>{desc}</p>
-                ))
-              ) : (
-                <p>{description}</p>
-              )} */}
               {combinedList.map((item, index) => (
                 <RespCard key={index} Resp={item} />
               ))}
