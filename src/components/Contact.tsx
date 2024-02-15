@@ -10,23 +10,52 @@ const Contact = () => {
 
     const { service_id, template_id, public_key } = API_KEY[0];
     const form = useRef<HTMLFormElement>(null);
+    const [error, setError] = useState('');
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
+        
 
         if (form.current) {
-            emailjs
-              .sendForm(service_id, template_id, form.current, {
-                publicKey: public_key,
-                })
-                .then(
+            const formData = new FormData(form.current);
+            let isValid = true;
+
+            if (!formData.get('user_name')) {
+                isValid = false;
+                setError("Please fill in the Name field")
+            }
+
+            if (!formData.get('user_email')) {
+                isValid = false;
+                setError("Please fill in the Email field")
+            }
+
+            if (!formData.get('subject')) {
+                isValid = false;
+                setError("Please fill in the Subject field")
+            }
+
+            if (!formData.get('message')) {
+                isValid = false;
+                setError("Please fill in the Message field")
+            }
+
+            if (isValid) {
+                emailjs
+                  .sendForm(service_id, template_id, form.current, {
+                            publicKey: public_key,
+                  })
+                  .then(
                     () => {
                         setEmailSubmitted(true);
+                        setError('');
                     },
                     (error) => {
                         console.log('FAILED...', error.text);
                     },
                 );
+            }
+            
         }
     }
 
@@ -50,6 +79,7 @@ const Contact = () => {
                     <GitHub />
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
+                    <div className="text-red-600">{error}</div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1rem] items-center">
                         <input 
                           type="text" 
