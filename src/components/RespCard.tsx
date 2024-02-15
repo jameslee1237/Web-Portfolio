@@ -23,7 +23,7 @@ const RespCard = ({
     return (
         <div 
          onClick={handleFlip}
-         className="mb-8 mr-[400px] w-[600px] h-[150px] rounded-md cursor-pointer">
+         className="mb-8 w-[600px] h-[150px] rounded-md cursor-pointer">
             <motion.div 
              className="flip-card-inner w-full h-full"
              initial={false}

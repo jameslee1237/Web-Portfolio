@@ -33,35 +33,38 @@ export default function ExperienceDetailPage({
     const srcItem = Array.isArray(src) ? src[0] ?? '' : src ?? '';
     combinedList.push({description: descItem, src: srcItem});
   }
- 
-  
+
   return (
     <div className="flex flex-col text-center">
       <div className="text-white text-4xl font-bold mt-16 mb-8">
         <h1>{title}</h1>
       </div>
       <div className="flex justify-center">
-        <div className="w-1/2">
+        <div className="w-full">
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
-            <div className="items-center w-full">
-              <h1 className="text-[30px] font-bold mb-8">Responsibilities</h1>
+            <h1 className="text-[30px] font-bold mb-8">Responsibilities</h1>
+            <div className="flex flex-wrap justify-center gap-4">
               {combinedList.map((item, index) => (
                 <RespCard key={index} Resp={item} />
               ))}
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-4 mb-16">
         <div className="w-1/2">
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
-            <div className="items-center w-full">
-              <h1 className="text-[30px] font-bold">Date</h1>
-              <p>{Date}</p>
-              <h1 className="text-[30px] font-bold mt-8">Hired By</h1>
-              <p>{Hire}</p>
-            </div>
+            <h1 className="text-[30px] font-bold">Date</h1>
+            <p>{Date}</p>
+          </div>
+        </div>
+        <div className="w-1/2">
+          <div className="text-white text-[20px] flex flex-col justify-start items-center">
+            <h1 className="text-[30px] font-bold">Hired By</h1>
+            <p>{Hire}</p>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
