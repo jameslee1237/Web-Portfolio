@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import LinkedIn from './LinkedIn';
 import GitHub from './Github';
 import emailjs from '@emailjs/browser';
-import { API_KEY } from "../constants/apikeys";
+import { API_KEY } from "../constants/apiKeys";
 
 const Contact = () => {
     const [emailsubmitted, setEmailSubmitted] = useState(false);
