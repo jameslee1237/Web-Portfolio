@@ -29,7 +29,7 @@ const About = () => {
                         ABOUT ME
                     </h1>
                     <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
-                        Some <span className="text-yellow-400">Text</span>
+                        Navigating <span className="text-yellow-400">Diversity</span>
                     </h2>
                     <p className="text-[19px] text-slate-300 md:text-lg mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

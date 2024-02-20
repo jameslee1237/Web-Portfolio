@@ -39,7 +39,7 @@ export const skill_level = [
 export const projects = [
     {
         id: "1",
-        image: "Image1",
+        image: "Mobile Responsive Web Portfolio",
     },
     {
         id: "2",
@@ -89,7 +89,7 @@ export const experienceDetails = [
 export const projectDetails = [
     {
         id: "1",
-        title: 'Project 1',
+        title: 'Mobile Responsive Web Portfolio',
         description: "Summary of project 1"
     },
     {
