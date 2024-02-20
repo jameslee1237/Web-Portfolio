@@ -40,18 +40,22 @@ export const projects = [
     {
         id: "1",
         image: "Mobile Responsive Web Portfolio",
+        start_date: "March 1, 2024"
     },
     {
         id: "2",
         image: "Image2",
+        start_date: "March 15, 2024"
     },
     {
         id: "3",
         image: "Image3",
+        start_date: "April 2, 2024"
     },
     {
         id: "4",
         image: "Image4",
+        start_date: "April 27, 2024"
     },
 ]
 
