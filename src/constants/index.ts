@@ -40,22 +40,26 @@ export const projects = [
     {
         id: "1",
         image: "Mobile Responsive Web Portfolio",
-        start_date: "March 1, 2024"
+        start_date: "March 1, 2024",
+        brief: "The aim of this project was to alter the design of the current web portfolio to ensure that it is mobile responsive."
     },
     {
         id: "2",
         image: "Image2",
-        start_date: "March 15, 2024"
+        start_date: "March 15, 2024",
+        brief: "Brief"
     },
     {
         id: "3",
         image: "Image3",
-        start_date: "April 2, 2024"
+        start_date: "April 2, 2024",
+        brief: "brief2"
     },
     {
         id: "4",
         image: "Image4",
-        start_date: "April 27, 2024"
+        start_date: "April 27, 2024",
+        brief: "some brief" 
     },
 ]
 
