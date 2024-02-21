@@ -5,14 +5,13 @@ const Texteffect = () => {
   return (
     <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
         'Programmer',
-        1500, // wait 1s before replacing "Mice" with "Hamsters"
-        'Web Developer',
+        1500, 
+        'Full stack Developer',
         1500,
         'Coder',
         1500,
-        'Designer',
+        'Software Engineer',
          1500
       ]}
   
