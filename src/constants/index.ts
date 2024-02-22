@@ -2,13 +2,13 @@ export const experiences = [
     {
         id: "1",
         title: "Database Administrator",
-        summary: `MySQL | MongoDB`,
+        summary: "MySQL",
         date: "Jul 2020 - Feb 2022"
     },
     {
         id: "2",
         title: "Software Engineer",
-        summary: "Python | tkinter",
+        summary: "Python",
         date: "Apr 2022 - Jul 2022"
     },
 ]
@@ -41,7 +41,7 @@ export const projects = [
         id: "1",
         image: "Mobile Responsive Web Portfolio",
         start_date: "March 1, 2024",
-        brief: "The aim of this project was to alter the design of the current web portfolio to ensure that it is mobile responsive."
+        brief: "Modify current web portfolio to be a mobile responsive web portfolio"
     },
     {
         id: "2",
