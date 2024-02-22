@@ -17,7 +17,7 @@ export const TAB_DATA = [
     {
         title: "Skill",
         id: "skills",
-        content: ["Next.js", "Typescript", "CSS", "MySQL", "Tensorflow", "Python", "Docker"]
+        content: ["Next.js", "Typescript", "CSS", "MySQL", "Tensorflow", "Python", "Docker", "MongoDB"]
     },
     {
         title: "Education",
@@ -30,10 +30,11 @@ export const skill_level = [
     '45%',
     '55%',
     '65%',
-    '35%',
     '50%',
+    '35%',
     "80%",
-    '70%'
+    '70%',
+    '40%'
 ]
 
 export const projects = [
@@ -41,25 +42,29 @@ export const projects = [
         id: "1",
         image: "Mobile Responsive Web Portfolio",
         start_date: "March 1, 2024",
-        brief: "Modify current web portfolio to be a mobile responsive web portfolio"
+        brief: "Modify current web portfolio to be a mobile responsive web portfolio",
+        skill: "Next.js, Typescript, CSS"
     },
     {
         id: "2",
         image: "Image2",
         start_date: "March 15, 2024",
-        brief: "Brief"
+        brief: "Brief",
+        skill: "Skill"
     },
     {
         id: "3",
         image: "Image3",
         start_date: "April 2, 2024",
-        brief: "brief2"
+        brief: "brief2",
+        skill: "skill_list"
     },
     {
         id: "4",
         image: "Image4",
         start_date: "April 27, 2024",
-        brief: "some brief" 
+        brief: "some brief",
+        skill: "skills"
     },
 ]
 

@@ -9,6 +9,7 @@ const ProjectCard = ({
         image: string;
         start_date: string;
         brief: string;
+        skill: string;
     }
 }) => {
     const router = useRouter();
@@ -25,8 +26,11 @@ const ProjectCard = ({
                     <p className="absolute left-2 top-5 text-[22px] font-bold text-black">{project.start_date}</p>
                     <p className="absolute mt-2 top-12 left-2 text-[18px] text-black">{project.brief}</p>
                 </div>
+                <div className="absolute bottom-4 left-2">
+                    <p className="text-sm text-black">{project.skill}</p>
+                </div>
                 <div className="absolute top-3 left-4">
-                    <p className="text-[30px] font-bold text-black">{project.image}</p>
+                    <p className="text-[30px] font-bold text-black">{project.image}</p> 
                 </div>
             </div>
         </div>

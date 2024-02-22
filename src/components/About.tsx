@@ -79,7 +79,7 @@ const About = () => {
                         </TabButton>
                     ))}       
                 </div>
-                <div className="text-white">
+                <div className="text-white mt-4">
                     {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
                         tab === "skills" ? (
                             index % 2 === 0 ? (
