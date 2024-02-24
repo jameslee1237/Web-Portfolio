@@ -43,28 +43,28 @@ export const projects = [
         image: "Mobile Responsive Web Portfolio",
         start_date: "March 1, 2024",
         brief: "Modify current web portfolio to be a mobile responsive web portfolio",
-        skill: "Next.js, Typescript, CSS"
+        skill: ["Next.js", "Typescript", "CSS"]
     },
     {
         id: "2",
         image: "Image2",
         start_date: "March 15, 2024",
         brief: "Brief",
-        skill: "Skill"
+        skill: ["Skill"]
     },
     {
         id: "3",
         image: "Image3",
         start_date: "April 2, 2024",
         brief: "brief2",
-        skill: "skill_list"
+        skill: ["skill_list"]
     },
     {
         id: "4",
         image: "Image4",
         start_date: "April 27, 2024",
         brief: "some brief",
-        skill: "skills"
+        skill: ["skills"]
     },
 ]
 
