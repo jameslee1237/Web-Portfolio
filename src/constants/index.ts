@@ -103,21 +103,30 @@ export const projectDetails = [
     {
         id: "1",
         title: 'Mobile Responsive Web Portfolio',
-        description: "Summary of project 1"
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
+        slides: [
+                    { src: "/test.png", width: 1920, height: 1080},
+                    { src: "/test2.png", width: 1920, height: 1080},
+                ]
     },
     {
         id: "2",
         title: 'Project 2',
-        description: "Summary of project 2"
+        description: "Summary of project 2",
+        slides: []
     },
     {
         id: "3",
         title: 'Project 3',
-        description: "Summary of project 3"
+        description: "Summary of project 3",
+        slides: []
     },
     {
         id: "4",
         title: 'Project 4',
-        description: "Summary of project 4"
+        description: "Summary of project 4",
+        slides: []
     }
 ]
