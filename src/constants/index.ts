@@ -22,7 +22,7 @@ export const TAB_DATA = [
     {
         title: "Education",
         id: "education",
-        content: ["University College London", "HELP College"]
+        content: ["University College London - London", "HELP College - Kuala Lumpur"]
     },
 ]
 
@@ -45,27 +45,27 @@ export const projects = [
         brief: "Modify current web portfolio to be a mobile responsive web portfolio",
         skill: ["Next.js", "Typescript", "CSS"]
     },
-    {
-        id: "2",
-        image: "Image2",
-        start_date: "March 15, 2024",
-        brief: "Brief",
-        skill: ["Skill"]
-    },
-    {
-        id: "3",
-        image: "Image3",
-        start_date: "April 2, 2024",
-        brief: "brief2",
-        skill: ["skill_list"]
-    },
-    {
-        id: "4",
-        image: "Image4",
-        start_date: "April 27, 2024",
-        brief: "some brief",
-        skill: ["skills"]
-    },
+    // {
+    //     id: "2",
+    //     image: "Image2",
+    //     start_date: "March 15, 2024",
+    //     brief: "Brief",
+    //     skill: ["Skill"]
+    // },
+    // {
+    //     id: "3",
+    //     image: "Image3",
+    //     start_date: "April 2, 2024",
+    //     brief: "brief2",
+    //     skill: ["skill_list"]
+    // },
+    // {
+    //     id: "4",
+    //     image: "Image4",
+    //     start_date: "April 27, 2024",
+    //     brief: "some brief",
+    //     skill: ["skills"]
+    // },
 ]
 
 export const experienceDetails = [
@@ -111,22 +111,22 @@ export const projectDetails = [
                     { src: "/test2.png", width: 1920, height: 1080},
                 ]
     },
-    {
-        id: "2",
-        title: 'Project 2',
-        description: "Summary of project 2",
-        slides: []
-    },
-    {
-        id: "3",
-        title: 'Project 3',
-        description: "Summary of project 3",
-        slides: []
-    },
-    {
-        id: "4",
-        title: 'Project 4',
-        description: "Summary of project 4",
-        slides: []
-    }
+    // {
+    //     id: "2",
+    //     title: 'Project 2',
+    //     description: "Summary of project 2",
+    //     slides: []
+    // },
+    // {
+    //     id: "3",
+    //     title: 'Project 3',
+    //     description: "Summary of project 3",
+    //     slides: []
+    // },
+    // {
+    //     id: "4",
+    //     title: 'Project 4',
+    //     description: "Summary of project 4",
+    //     slides: []
+    // }
 ]

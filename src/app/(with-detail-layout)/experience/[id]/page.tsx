@@ -51,14 +51,14 @@ export default function ExperienceDetailPage({
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-4 mb-16">
-        <div className="w-1/2">
+      <div className="flex flex-col justify-center mt-4 mb-16">
+        <div className="mb-8">
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
             <h1 className="text-[30px] font-bold">Date</h1>
             <p>{Date}</p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div>
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
             <h1 className="text-[30px] font-bold">Hired By</h1>
             <p>{Hire}</p>

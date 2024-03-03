@@ -33,7 +33,7 @@ export default function ProjectDetailPage({
                 <h1>{title}</h1>
             </div>
             <div className="text-white text-[20px] flex gap-4">
-                <div className="w-3/5 uppercase font-bold flex flex-col items-center justify-center">
+                <div className="w-1/2 uppercase font-bold flex flex-col items-center justify-center">
                     <p className="text-[30px] mb-8">Screenshots</p>
                     <Lightbox 
                       index={index}
@@ -69,13 +69,13 @@ export default function ProjectDetailPage({
                         controller={{ closeOnPullDown: true, closeOnBackdropClick: true }}
                     />
                 </div>
-                <div className="w-2/5 mr-8">
+                <div className="w-1/2 mr-8">
                     <p className="font-bold text-[40px]">Aim</p>
                     <p className="text-left">{description}</p>
                     <p className="font-bold text-[40px]">Achieved</p>
-                    <p>Something</p>
+                    <p className="text-left">Something</p>
                     <p className="font-bold text-[40px]">Future Improvements</p>
-                    <p>Some things</p>
+                    <p className="text-left">Some things</p>
                 </div>
             </div>
         </div>

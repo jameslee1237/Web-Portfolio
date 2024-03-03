@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
             <div className="w-[700px] relative">
                 <h1 className="text-[30px] md:text-[40px] text-white font-bold text-center">
-                    -PHOTO-
+                    <img src="/HeroImage.png" />
                 </h1>
             </div>
         </div>
