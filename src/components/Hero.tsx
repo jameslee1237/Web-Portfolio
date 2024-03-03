@@ -31,6 +31,7 @@ const Hero = () => {
                 </div>
                     <p className="mt-[2rem] text-[20px] text-[#ffffff92]">
                         Hello, I'm an enthusiastic undergraduate in computer science, well-versed in mathematics, machine learning, web development and software development. 
+                        <p className="text-[25px] font-bold">Need to change sentence below</p>
                         Proficient in diverse programming languages and different development tools, I've crafted diverse software solutions and managed databases efficiently. 
                         With a collaborative spirit, I thrive in team settings, leveraging collective expertise to drive efficient solutions. 
                         Committed to growth, I eagerly embrace new challenges and emerging technologies to innovate solutions for real-world issues.
