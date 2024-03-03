@@ -32,9 +32,14 @@ const About = () => {
                         Navigating <span className="text-yellow-400">Diversity</span>
                     </h2>
                     <p className="text-[19px] text-slate-300 md:text-lg mb-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        My life has been a dynamic journey, encompassing unique experiences across various countries. 
+
+                        <p className="text-[25px] font-bold">Below needs to be changed</p>
+                        "exposure to different cultures and educational systems. Each transition has honed my ability to adapt and thrive amidst change, 
+                        fostering resilience and adaptability within me. Embracing diversity has not only enriched my worldview and broadened my perspectives 
+                        but has also empowered me to find strength in unfamiliar situations. Instead of viewing diversity as a challenge, 
+                        I perceive it as a wellspring of inspiration, propelling both personal and intellectual growth. Through this embrace of diversity, 
+                        I have cultivated meaningful connections across borders, discovering the richness and interconnectedness of life's experiences."
                     </p>
                 </div>
                 <div className="lg:w-[700px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">

@@ -30,10 +30,10 @@ const Hero = () => {
                     </button>
                 </div>
                     <p className="mt-[2rem] text-[20px] text-[#ffffff92]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Hello, I'm an enthusiastic undergraduate in computer science, well-versed in mathematics, machine learning, web development and software development. 
+                        Proficient in diverse programming languages and different development tools, I've crafted diverse software solutions and managed databases efficiently. 
+                        With a collaborative spirit, I thrive in team settings, leveraging collective expertise to drive efficient solutions. 
+                        Committed to growth, I eagerly embrace new challenges and emerging technologies to innovate solutions for real-world issues.
                     </p>
             </div>
             <div className="w-[700px] relative">
