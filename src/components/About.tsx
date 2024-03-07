@@ -31,15 +31,12 @@ const About = () => {
                     <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
                         Navigating <span className="text-yellow-400">Diversity</span>
                     </h2>
-                    <p className="text-[19px] text-slate-300 md:text-lg mb-4">
-                        My life has been a dynamic journey, encompassing unique experiences across various countries. 
-
-                        <p className="text-[25px] font-bold">Below needs to be changed</p>
-                        "exposure to different cultures and educational systems. Each transition has honed my ability to adapt and thrive amidst change, 
+                    <p className="md:text-lg text-slate-300 mb-4">
+                        My life has been a dynamic journey, encompassing unique experiences across various countries. Being exposed to different cultures
+                        has led to a broadened perspective and a deep appreciation for diversity. Each transition has honed my ability to adapt and thrive amidst change,
                         fostering resilience and adaptability within me. Embracing diversity has not only enriched my worldview and broadened my perspectives 
                         but has also empowered me to find strength in unfamiliar situations. Instead of viewing diversity as a challenge, 
-                        I perceive it as a wellspring of inspiration, propelling both personal and intellectual growth. Through this embrace of diversity, 
-                        I have cultivated meaningful connections across borders, discovering the richness and interconnectedness of life's experiences."
+                        I perceive it as a wellspring of inspiration, propelling both personal and intellectual growth. 
                     </p>
                 </div>
                 <div className="lg:w-[700px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
@@ -88,7 +85,7 @@ const About = () => {
                     {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
                         tab === "skills" ? (
                             index % 2 === 0 ? (
-                                <div key={item + index} className="flex flex-row mb-[1rem]">
+                                <div key={item} className="flex flex-row mb-[1rem]">
                                     <div className="relative mr-4" style={{ width: "600px"}}>
                                         <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white text-[20px] font-bold overflow-hidden">
                                             {item}
@@ -106,9 +103,11 @@ const About = () => {
                                 </div>
                             ) : null
                         ) : (
-                            <div key={item} className="relative mb-[1rem]">
-                                <p>{item}</p>
-                            </div>
+                            <div key={item} className="flex flex-row mb-[1rem] text-[20px] font-bold">
+                                <div className="relative mr-4">
+                                    <p className="flex">{item}</p>
+                                </div>
+                            </div>                          
                         )
                     ))}
                 </div>

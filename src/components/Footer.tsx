@@ -25,7 +25,7 @@ const Footer = () => {
                         <MapIcon />
                         <h3 className="font-bold text-lg mb-1 ml-2 text-yellow-400">Address</h3>
                     </div>
-                    <p className="text-sm">South Korea</p>
+                    <p className="text-sm">Seoul, South Korea</p>
                 </div>
                 <div className="text-white">
                     <div className="flex items-center">

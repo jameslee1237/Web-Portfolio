@@ -71,9 +71,9 @@ const Contact = () => {
                         Get in touch
                     </h1>
                     <p className="text-[19px] text-slate-300 md:text-lg mb-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    I am currently exploring new career opportunities and would be thrilled to hear from you regarding any potential openings or collaborations. 
+                    With a passion for diverse areas ranging from software engineer to full stack developer, I am eager to contribute my skills and experience 
+                    to innovative projects and dynamic teams. Please feel free to reach out via the contact form.
                     </p>
                     <LinkedIn />
                     <GitHub />

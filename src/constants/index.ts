@@ -22,7 +22,7 @@ export const TAB_DATA = [
     {
         title: "Education",
         id: "education",
-        content: ["University College London - London", "HELP College - Kuala Lumpur"]
+        content: ["University College London - London (BSc Computer Science)", "HELP College - Kuala Lumpur (A-Levels)"]
     },
 ]
 
@@ -42,7 +42,7 @@ export const projects = [
         id: "1",
         image: "Mobile Responsive Web Portfolio",
         start_date: "March 1, 2024",
-        brief: "Modify current web portfolio to be a mobile responsive web portfolio",
+        brief: "Create a mobile responsive web portfolio by modifying the existing web portfolio",
         skill: ["Next.js", "Typescript", "CSS"]
     },
     // {
