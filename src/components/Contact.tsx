@@ -7,7 +7,6 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     const [emailsubmitted, setEmailSubmitted] = useState(false);
     const [error, setError] = useState('');
-
     const form = useRef<HTMLFormElement>(null);
 
     if (!process.env.service_id || !process.env.template_id || !process.env.public_key) {
@@ -19,8 +18,6 @@ const Contact = () => {
     
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
-        
-
         if (form.current) {
             const formData = new FormData(form.current);
             let isValid = true;
