@@ -9,9 +9,9 @@ const Contact = () => {
     const [error, setError] = useState('');
     const form = useRef<HTMLFormElement>(null);
 
-    const service_id = process.env.SERVICE_ID!;
-    const template_id = process.env.TEMPLATE_ID!;
-    const public_key = process.env.PUBLIC_KEY!;
+    const service_id = process.env.NEXT_PUBLIC_SERVICE_ID!;
+    const template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
+    const public_key = process.env.NEXT_PUBLIC_KEY!;
     
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
