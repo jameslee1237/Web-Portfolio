@@ -10,7 +10,7 @@ const Contact = () => {
     const form = useRef<HTMLFormElement>(null);
 
     if (!process.env.service_id || !process.env.template_id || !process.env.public_key) {
-        return <div>Missing emailjs keys</div>
+        return <div>Missing email keys</div>
     }
     const service_id = process.env.service_id;
     const template_id = process.env.template_id;

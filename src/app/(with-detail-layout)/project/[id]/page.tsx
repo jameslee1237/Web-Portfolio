@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { projectDetails } from '@/constants';
 import Inline from "yet-another-react-lightbox/plugins/inline";
-import {Lightbox} from 'yet-another-react-lightbox';
+import Lightbox from 'yet-another-react-lightbox';
 import "yet-another-react-lightbox/styles.css";
 
 export default function ProjectDetailPage({ 
@@ -73,7 +73,7 @@ export default function ProjectDetailPage({
                     <p className="font-bold text-[40px]">Aim</p>
                     <p className="text-left">{description}</p>
                     <p className="font-bold text-[40px]">Future Improvements</p>
-                    <p className="text-left">{FI}</p>
+                    <p className="text-left mb-8">{FI}</p>
                 </div>
             </div>
         </div>
