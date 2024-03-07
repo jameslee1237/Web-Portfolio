@@ -9,12 +9,9 @@ const Contact = () => {
     const [error, setError] = useState('');
     const form = useRef<HTMLFormElement>(null);
 
-    if (!process.env.service_id || !process.env.template_id || !process.env.public_key) {
-        return <div>Missing email keys</div>
-    }
-    const service_id = process.env.service_id;
-    const template_id = process.env.template_id;
-    const public_key = process.env.public_key;
+    const service_id = process.env.SERVICE_ID!;
+    const template_id = process.env.TEMPLATE_ID!;
+    const public_key = process.env.PUBLIC_KEY!;
     
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
