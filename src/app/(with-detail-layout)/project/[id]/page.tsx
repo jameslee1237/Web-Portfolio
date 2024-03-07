@@ -14,14 +14,14 @@ export default function ProjectDetailPage({
 }) {
     const ProjectDetail = projectDetails.find((t) => t.id === params.id);
 
+    const [open, setOpen] = useState(false);
+    const [index, setIndex] = useState(0);
+
     if (!ProjectDetail) {
         return <div className="text-white text-[40px] text-center font-bold">Project not found</div>
     }
 
     const { title, description, slides, FI } = ProjectDetail;
-
-    const [open, setOpen] = useState(false);
-    const [index, setIndex] = useState(0);
 
     const toggleOpen = (state: boolean) => () => setOpen(state);
 

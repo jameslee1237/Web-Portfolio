@@ -8,7 +8,7 @@ import { API_KEY } from "../constants/apiKeys";
 const Contact = () => {
     const [emailsubmitted, setEmailSubmitted] = useState(false);
 
-    // const { service_id, template_id, public_key } = API_KEY[0];
+    const [error, setError] = useState('');
     if (!process.env.service_id || !process.env.template_id || !process.env.public_key) {
         return <div>Missing emailjs keys</div>
     }
@@ -16,7 +16,7 @@ const Contact = () => {
     const template_id = process.env.template_id;
     const public_key = process.env.public_key;
     const form = useRef<HTMLFormElement>(null);
-    const [error, setError] = useState('');
+    
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();

@@ -30,7 +30,7 @@ const Hero = () => {
                     </button>
                 </div>
                     <p className="mt-[2rem] text-[20px] text-[#ffffff92]">
-                        Hello, I'm an enthusiastic undergraduate in computer science, well-versed in mathematics, machine learning, web development and software development. 
+                        Hello, I&apos;m an enthusiastic undergraduate in computer science, well-versed in mathematics, machine learning, web development and software development. 
                         Proficient in multiple programming languages and different development tools,  I have constructed diverse projects, ranging from simple softwares to complex applications.
                         With a collaborative spirit, I thrive in team settings, leveraging collective expertise to drive efficient solutions. 
                         Committed to growth, I eagerly embrace new challenges and emerging technologies to innovate solutions for real-world issues.
