@@ -45,27 +45,6 @@ export const projects = [
         brief: "Create a mobile responsive web portfolio by modifying the existing web portfolio",
         skill: ["Next.js", "Typescript", "CSS"]
     },
-    {
-        id: "2",
-        image: "Image2",
-        start_date: "March 15, 2024",
-        brief: "Brief",
-        skill: ["Skill"]
-    },
-    {
-        id: "3",
-        image: "Image3",
-        start_date: "April 2, 2024",
-        brief: "brief2",
-        skill: ["skill_list"]
-    },
-    // {
-    //     id: "4",
-    //     image: "Image4",
-    //     start_date: "April 27, 2024",
-    //     brief: "some brief",
-    //     skill: ["skills"]
-    // },
 ]
 
 export const experienceDetails = [
@@ -103,30 +82,22 @@ export const projectDetails = [
     {
         id: "1",
         title: 'Mobile Responsive Web Portfolio',
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
+        description: `The aim of this project is to develop a mobile-responsive web portfolio in a visually appealing and user-friendly manner. 
+                      By leveraging Tailwind CSS's responsive utilities, I aim to create a portfolio that dynamically adjusts its 
+                      layout and design based on the screen size, providing a seamless and consistent experience across smartphones, tablets, and desktops.`,
+        FI: `While Tailwind css provides a largely seamless experience across different screen sizes using fixed breakpoints, since these breakpoints
+             have fixed values, some content may not be displayed optimally on certain devices. To address this, implementing more dynamic and 
+             device-specific breakpoints would enhance the portfolio's adaptabiltiy and user experience. By incorporating device detection or media queris, 
+             the portfolio could adjust its layout more precisely.`,
         slides: [
-                    { src: "/test.png", width: 1920, height: 1080},
-                    { src: "/test2.png", width: 1920, height: 1080},
+                    { src: "/Project1_Image1.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image2.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image3.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image4.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image5.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image6.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image7.png", width: 1920, height: 1020},
+                    { src: "/Project1_Image8.png", width: 1920, height: 1020},
                 ]
     },
-    // {
-    //     id: "2",
-    //     title: 'Project 2',
-    //     description: "Summary of project 2",
-    //     slides: []
-    // },
-    // {
-    //     id: "3",
-    //     title: 'Project 3',
-    //     description: "Summary of project 3",
-    //     slides: []
-    // },
-    // {
-    //     id: "4",
-    //     title: 'Project 4',
-    //     description: "Summary of project 4",
-    //     slides: []
-    // }
 ]

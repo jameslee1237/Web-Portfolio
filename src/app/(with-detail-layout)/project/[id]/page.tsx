@@ -18,7 +18,7 @@ export default function ProjectDetailPage({
         return <div className="text-white text-[40px] text-center font-bold">Project not found</div>
     }
 
-    const { title, description, slides } = ProjectDetail;
+    const { title, description, slides, FI } = ProjectDetail;
 
     const [open, setOpen] = useState(false);
     const [index, setIndex] = useState(0);
@@ -32,8 +32,8 @@ export default function ProjectDetailPage({
             <div className="text-white text-4xl font-bold mt-16 mb-8 ml-16" style={{width: "90vw"}}>
                 <h1>{title}</h1>
             </div>
-            <div className="text-white text-[20px] flex gap-4">
-                <div className="w-1/2 uppercase font-bold flex flex-col items-center justify-center">
+            <div className="text-white text-[18px] flex flex-col md:flex-row gap-4">
+                <div className="uppercase font-bold flex flex-col items-center justify-center md:w-1/2">
                     <p className="text-[30px] mb-8">Screenshots</p>
                     <Lightbox 
                       index={index}
@@ -69,13 +69,11 @@ export default function ProjectDetailPage({
                         controller={{ closeOnPullDown: true, closeOnBackdropClick: true }}
                     />
                 </div>
-                <div className="w-1/2 mr-8">
+                <div className="md:mr-8 md:w-1/2 ml-4">
                     <p className="font-bold text-[40px]">Aim</p>
                     <p className="text-left">{description}</p>
-                    <p className="font-bold text-[40px]">Achieved</p>
-                    <p className="text-left">Something</p>
                     <p className="font-bold text-[40px]">Future Improvements</p>
-                    <p className="text-left">Some things</p>
+                    <p className="text-left">{FI}</p>
                 </div>
             </div>
         </div>
