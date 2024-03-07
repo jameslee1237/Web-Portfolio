@@ -15,7 +15,7 @@ const handleDownloadCV = () => {
 
 const Hero = () => {
     return (
-    <div className="h-[88vh] bg-[#438db2]">
+    <div className="h-[88vh] bg-[#438db2] overflow-x-hidden">
         <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
             <div>
                 <h1 className="text-[40px] md:text-[50px] text-white font-bold">
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
             <div className="w-[700px] relative">
                 <h1 className="text-[30px] md:text-[40px] text-white font-bold text-center">
-                    <img src="/HeroImage.png" />
+                    <img className="relative object-contain" src="/HeroImage.png" />
                 </h1>
             </div>
         </div>
