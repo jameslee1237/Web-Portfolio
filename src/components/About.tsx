@@ -23,7 +23,7 @@ const About = () => {
     
     return (
         <div className="bg-[#2c7092] pb-[8rem] pt-[4rem] md:pt-[8rem]">
-            <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[3rem] items-start">
+            <div className="w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[3rem] items-start">
                 <div className="mb-[3rem]">
                     <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] md-[1rem]">
                         ABOUT ME
@@ -39,7 +39,7 @@ const About = () => {
                         I perceive it as a wellspring of inspiration, propelling both personal and intellectual growth. 
                     </p>
                 </div>
-                <div className="lg:w-[700px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
+                <div className="xl:w-[700px] lg:w-[400px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] mb-[8rem] md:mb-0 relative">
                     <h1 className="text-[30px] md:text-[40px] mb-4 text-white font-bold text-center">
                         Experience
                     </h1>
@@ -69,7 +69,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="ml-[150px] w-[85%]">
+            <div className="md:ml-[150px] ml-4">
                 <div className="text-[20px]">
                     {TAB_DATA.map((tabItem) => (
                         <TabButton 

@@ -45,20 +45,20 @@ export const projects = [
         brief: "Create a mobile responsive web portfolio by modifying the existing web portfolio",
         skill: ["Next.js", "Typescript", "CSS"]
     },
-    // {
-    //     id: "2",
-    //     image: "Image2",
-    //     start_date: "March 15, 2024",
-    //     brief: "Brief",
-    //     skill: ["Skill"]
-    // },
-    // {
-    //     id: "3",
-    //     image: "Image3",
-    //     start_date: "April 2, 2024",
-    //     brief: "brief2",
-    //     skill: ["skill_list"]
-    // },
+    {
+        id: "2",
+        image: "Image2",
+        start_date: "March 15, 2024",
+        brief: "Brief",
+        skill: ["Skill"]
+    },
+    {
+        id: "3",
+        image: "Image3",
+        start_date: "April 2, 2024",
+        brief: "brief2",
+        skill: ["skill_list"]
+    },
     // {
     //     id: "4",
     //     image: "Image4",

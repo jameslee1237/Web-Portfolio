@@ -19,7 +19,7 @@ const ProjectCard = ({
     }
 
     return (
-        <div className="flex items-center" onClick={handleClick}>
+        <div className="flex items-center lg:max-w-md" onClick={handleClick}>
             <div className="relative w-[430px] h-[300px] bg-[#fbfbcb] rounded-md cursor-pointer hover:-translate-y-6 transition-all duration-200 flex justify-center">
                 <div className="absolute top-1/3 left-0 right-0 border-t border-black">
                     <p className="absolute top-2 left-2 text-[15px] text-black opacity-50">Start date</p>

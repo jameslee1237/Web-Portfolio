@@ -15,8 +15,8 @@ const handleDownloadCV = () => {
 
 const Hero = () => {
     return (
-    <div className="h-[88vh] bg-[#438db2] overflow-x-hidden">
-        <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
+    <div className="bg-[#438db2] pb-[8rem] pt-[2rem] md:pt-[4rem]">
+        <div className="w-[85%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
             <div>
                 <h1 className="text-[40px] md:text-[50px] text-white font-bold">
                     {`HI I'M JAMES`}
@@ -36,10 +36,8 @@ const Hero = () => {
                         Committed to growth, I eagerly embrace new challenges and emerging technologies to innovate solutions for real-world issues.
                     </p>
             </div>
-            <div className="w-[700px] relative">
-                <h1 className="text-[30px] md:text-[40px] text-white font-bold text-center">
-                    <img className="relative object-contain" src="/HeroImage.png" />
-                </h1>
+            <div>
+                <img className="md:object-scale-down object-contain" src="/HeroImage.png" />
             </div>
         </div>
     </div>
