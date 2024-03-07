@@ -18,8 +18,6 @@ const Contact = () => {
     const template_id = process.env.template_id;
     const public_key = process.env.public_key;
     
-    
-
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
         
