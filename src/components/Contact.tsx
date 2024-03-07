@@ -18,7 +18,9 @@ const Contact = () => {
         if (form.current) {
             const formData = new FormData(form.current);
             let isValid = true;
-
+            if (formData.get("email_honey") !== "") {
+                return;
+            }
             if (!formData.get('user_name')) {
                 isValid = false;
                 setError("Please fill in the Name field")
@@ -98,6 +100,11 @@ const Contact = () => {
                         placeholder="Subject"
                         name="subject"
                         className="py-[0.7rem] mt-[1rem] w-full outline-none text-white bg-gray-800 rounded-md px-4"
+                    />
+                    <input
+                        type="hidden"
+                        name="email_honey"
+                        placeholder="honeypot"
                     />
                     <textarea
                         placeholder="Message"
