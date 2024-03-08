@@ -86,3 +86,15 @@
       padding-left: 200px;
     }
 }
+
+@media (min-width: 1651px) and (max-width: 1750px) {
+  .custom-spacing {
+    padding-left: 250px;
+  }
+}
+
+@media (min-width: 1751px) {
+  .custom-spacing {
+     padding-left: 20vw;
+  }
+}
