@@ -57,4 +57,28 @@
     }
 }
 
+@media (max-width: 1248px) {
+   .custom-spacing {
+      padding-left: 1rem;
+   }
+}
+
+@media (min-width: 1249px) and (max-width: 1350px) {
+    .custom-spacing {
+      padding-left: 2rem;
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 1450px) {
+    .custom-spacing {
+      padding-left: 100px;
+    }
+}
+
+@media (min-width:1451px) {
+    .custom-spacing {
+      padding-left:200px;
+    }
+}
+
 
