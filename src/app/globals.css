@@ -81,3 +81,8 @@
     }
 }
 
+@media (min-width: 1551px) and (max-width: 1650px) {
+    .custom-spacing {
+      padding-left: 200px;
+    }
+}
