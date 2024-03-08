@@ -90,3 +90,15 @@ html, body {
   }
 }
 
+@media (min-width: 530px) and (max-width: 767px) {
+  .custom-resp-text {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 530px) {
+  .custom-resp-text {
+    font-size: 3.5vw;
+  }
+} 
+

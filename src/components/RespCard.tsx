@@ -40,7 +40,7 @@ const RespCard = ({
                 </div>
                 <div
                  className="w-full h-full group absolute bg-[#ed6262] flip-card-back bg-cover bg-center text-white flex justify-center text-center rounded-lg p-4">
-                    <p className="text-center">{Resp.description}</p>
+                    <p className="text-center md:text-[20px] text-[4vw] custom-resp-text">{Resp.description}</p>
                 </div>
             </motion.div>
         </div>
