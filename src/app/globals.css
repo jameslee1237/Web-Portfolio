@@ -65,7 +65,7 @@
 
 @media (min-width: 1249px) {
     .custom-spacing {
-      padding-left: calc((100% - width()) / 2);
+      padding-left: 2rem;
     }
 }
 

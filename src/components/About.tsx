@@ -20,6 +20,10 @@ const About = () => {
     const handleTabChange = (id: string) => {
         setTab(id);
     }
+
+    const skill_bar = document.getElementById("skillbars")!;
+    const skill_width = skill_bar.offsetWidth
+    const spacing = (window.innerWidth - skill_width) / 2;
     
     return (
         <div className="bg-[#2c7092] pb-[8rem] pt-[4rem] md:pt-[8rem]">
@@ -69,7 +73,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="items-center custom-spacing">
+            <div className={`items-center ml-4 xl:ml-[${spacing}px]`}>
                 <div className="text-[20px]">
                     {TAB_DATA.map((tabItem) => (
                         <TabButton 
@@ -81,7 +85,7 @@ const About = () => {
                         </TabButton>
                     ))}       
                 </div>
-                <div className="text-white mt-4">
+                <div id="skillbars" className="text-white mt-4">
                     {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
                         tab === "skills" ? (
                             index % 2 === 0 ? (
