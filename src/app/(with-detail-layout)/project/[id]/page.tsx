@@ -33,7 +33,7 @@ export default function ProjectDetailPage({
                 <h1>{title}</h1>
             </div>
             <div className="text-white text-[18px] flex flex-col md:flex-row gap-4">
-                <div className="uppercase font-bold flex flex-col items-center justify-center items-scale-down md:w-1/2 md:mx-4">
+                <div className="uppercase font-bold flex flex-col items-center justify-center items-scale-down md:w-1/2 mx-4">
                     <p className="text-[30px] mb-8">Screenshots</p>
                     <Lightbox 
                       index={index}
