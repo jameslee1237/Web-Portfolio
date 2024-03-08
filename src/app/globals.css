@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 @layer components {
     .nav-link {
         @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block
