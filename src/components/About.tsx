@@ -6,6 +6,7 @@ import { experiences, TAB_DATA, skill_level } from "@/constants";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import TerminalIcon from '@mui/icons-material/Terminal';
+import dynamic from 'next/dynamic';
 
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
     const level = skill_level;
     const router = useRouter();
     const ref = useRef<HTMLDivElement>(null);
+    const About = dynamic(() => import("@/components/About"), { ssr: false });
 
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
