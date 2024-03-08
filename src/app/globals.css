@@ -57,7 +57,11 @@
     }
 }
 
-
+@media (min-width: 1600px) {
+   .custom-spacing {
+      padding-left: 250px;
+   }
+}
 
 
 
