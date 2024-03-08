@@ -32,7 +32,7 @@ export default function ProjectDetailPage({
             <div className="text-white text-4xl font-bold mt-16 mb-8 ml-16 mr-16" style={{width: "90vw"}}>
                 <h1>{title}</h1>
             </div>
-            <div className="text-white text-[18px] flex flex-col md:flex-row gap-4">
+            <div className="text-white text-[18px] flex flex-col md:flex-row bg-blue-300 mx-auto" style={{width: "100vw"}}>
                 <div className="uppercase font-bold flex flex-col items-center justify-center md:w-1/2 mx-4 object-contain">
                     <p className="text-[30px] mb-8">Screenshots</p>
                     <Lightbox 
