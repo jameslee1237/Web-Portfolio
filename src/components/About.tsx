@@ -68,7 +68,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="ml-4 items-center custom-spacing">
+            <div className="mx-auto" style={{width: "80vw"}}>
                 <div className="text-[20px]">
                     {TAB_DATA.map((tabItem) => (
                         <TabButton 
