@@ -69,7 +69,7 @@ export default function ProjectDetailPage({
                         controller={{ closeOnPullDown: true, closeOnBackdropClick: true }}
                     />
                 </div>
-                <div className="md:mr-8 md:w-1/2 ml-4">
+                <div className="md:mr-8 md:w-1/2 ml-4 mr-4">
                     <p className="font-bold text-[40px]">Aim</p>
                     <p className="text-left">{description}</p>
                     <p className="font-bold text-[40px]">Future Improvements</p>
