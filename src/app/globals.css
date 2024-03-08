@@ -57,11 +57,15 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1248px) {
    .custom-spacing {
-      padding-left: 15vw;
+      padding-left: 1rem;
    }
 }
 
-
+@media (min-width: 1249px) {
+    .custom-spacing {
+      padding-left: calc((100% - width()) / 2);
+    }
+}
 
