@@ -86,14 +86,14 @@ const About = () => {
                             index % 2 === 0 ? (
                                 <div key={item} className="flex flex-row mb-[1rem]">
                                     <div className="relative mr-4" style={{ width: "600px"}}>
-                                        <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white text-[20px] font-bold overflow-hidden">
+                                        <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white custom-text font-bold overflow-hidden">
                                             {item}
                                         </h1>
                                         <span className="absolute bottom-0 left-0 bg-green-500" style={{ width: level[index], height:"4px"}}></span>
                                     </div>
                                     {TAB_DATA.find((t) => t.id === tab)?.content[index + 1] && (
                                         <div className="relative mr-4" style={{ width: "600px"}}>
-                                            <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white text-[20px] font-bold overflow-hidden">
+                                            <h1 className="p-3 uppercase w-full bg-gray-800 rounded-sm text-white custom-text font-bold overflow-hidden">
                                                 {TAB_DATA.find((t) => t.id === tab)?.content[index + 1]}
                                             </h1>
                                             <span className="absolute bottom-0 left-0 bg-green-500" style={{ width: level[index + 1], height:"4px"}}></span>

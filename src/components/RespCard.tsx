@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 
 const RespCard = ({ 
@@ -23,7 +24,7 @@ const RespCard = ({
     return (
         <div 
          onClick={handleFlip}
-         className="mb-8 w-[600px] h-[150px] rounded-md cursor-pointer">
+         className="mb-8 w-[80vw] max-w-[600px] h-[150px] rounded-md cursor-pointer">
             <motion.div 
              className="flip-card-inner w-full h-full"
              initial={false}
@@ -34,7 +35,7 @@ const RespCard = ({
                 <div
                  className="w-full h-full group absolute bg-[#ed6262] flip-card-front bg-cover bg-center text-white text-center items-center rounded-lg p-4">
                     <div className="flex justify-center items-center h-full">
-                        <img src={Resp.src} style={{width: "150px", height: "150px"}} className="z-3"/>
+                        <Image src={Resp.src} width={150} alt={Resp.src} height={150} className="z-3" style={{objectFit: "contain"}}/>
                     </div>
                 </div>
                 <div

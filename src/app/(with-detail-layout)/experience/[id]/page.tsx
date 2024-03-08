@@ -43,7 +43,7 @@ export default function ExperienceDetailPage({
         <div className="w-full">
           <div className="text-white text-[20px] flex flex-col justify-start items-center">
             <h1 className="text-[30px] font-bold mb-8">Responsibilities</h1>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-x-16">
               {combinedList.map((item, index) => (
                 <RespCard key={index} Resp={item} />
               ))}

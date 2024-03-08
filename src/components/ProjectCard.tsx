@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const ProjectCard = ({
     project,
@@ -19,7 +20,7 @@ const ProjectCard = ({
     }
 
     return (
-        <div className="flex items-center lg:max-w-md" onClick={handleClick}>
+        <div className="flex items-center custom-card lg:max-w-md mx-4" onClick={handleClick}>
             <div className="relative w-[430px] h-[300px] bg-[#fbfbcb] rounded-md cursor-pointer hover:-translate-y-6 transition-all duration-200 flex justify-center">
                 <div className="absolute top-1/3 left-0 right-0 border-t border-black">
                     <p className="absolute top-2 left-2 text-[15px] text-black opacity-50">Start date</p>
@@ -29,9 +30,11 @@ const ProjectCard = ({
                 <div className="absolute bottom-4 left-2">
                     <div className="flex">
                         {project.skill.map((s) => (
-                            <div key={s} className="flex bg-green-100 items-center mr-4 px-3 py-1">
-                                <img src={`/${s}.png`} alt={s} className="w-6 h-6 mr-2" />
-                                <p>{s}</p>
+                            <div key={s} className="flex bg-green-100 items-center mr-4 custom-bar px-3 py-1">
+                                <div className="flex">
+                                    <Image src={`/${s}.png`} alt={s} width={30} height={30} style={{objectFit: "contain", paddingRight: "0.5rem"}} /> 
+                                    <p className="text-[18px] justify-center my-auto custom-text">{s}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

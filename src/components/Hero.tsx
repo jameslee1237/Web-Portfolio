@@ -2,6 +2,7 @@
 import React from "react";
 import Texteffect from "./Texteffect";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
+import Image from "next/image";
 
 const handleDownloadCV = () => {
     const cvPath = "/CV.pdf";
@@ -37,7 +38,7 @@ const Hero = () => {
                     </p>
             </div>
             <div>
-                <img className="md:object-scale-down object-contain" src="/HeroImage.png" />
+                <Image src="/HeroImage.png" alt="Hero Image" width={3000} height={3000} style={{objectFit: "contain"}} />
             </div>
         </div>
     </div>
