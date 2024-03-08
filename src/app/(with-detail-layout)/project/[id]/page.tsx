@@ -28,7 +28,7 @@ export default function ProjectDetailPage({
     const updateIndex = ({ index: current}: {index: number}) => setIndex(current);
 
     return (
-        <div className="text-center flex-col">
+        <div className="text-center flex-col" style={{width: "100vw"}}>
             <div className="text-white text-4xl font-bold mt-16 mb-8 ml-16 mr-16" style={{width: "90vw"}}>
                 <h1>{title}</h1>
             </div>
