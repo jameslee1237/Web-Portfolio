@@ -57,15 +57,4 @@
     }
 }
 
-@media (max-width: 1248px) {
-   .custom-spacing {
-      padding-left: 1rem;
-   }
-}
-
-@media (min-width: 1249px) {
-    .custom-spacing {
-      padding-left: 2rem;
-    }
-}
 
