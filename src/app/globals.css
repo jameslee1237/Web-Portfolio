@@ -75,10 +75,9 @@
     }
 }
 
-@media (min-width:1451px) {
+@media (min-width:1451px) and (max-width: 1550px){
     .custom-spacing {
       padding-left:150px;
     }
 }
-
 

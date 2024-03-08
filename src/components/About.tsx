@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import TabButton from "./TabButton";
 import { useRouter } from "next/navigation";
 import { experiences, TAB_DATA, skill_level } from "@/constants";
@@ -12,6 +12,7 @@ const About = () => {
     const [tab, setTab] = useState<string>("skills");
     const level = skill_level;
     const router = useRouter();
+    const ref = useRef<HTMLDivElement>(null);
 
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
@@ -22,6 +23,15 @@ const About = () => {
     const handleTabChange = (id: string) => {
         setTab(id);
     }
+
+    useLayoutEffect(() => {
+        if (ref.current) {
+            const { clientWidth, clientHeight } = ref.current;
+            setDimensions({ width: clientWidth, height: clientHeight });
+        }
+    })
+
+    const spacing = (window.innerWidth - dimensions.width) / 2;
     
     return (
         <div className="bg-[#2c7092] pb-[8rem] pt-[4rem] md:pt-[8rem]">
@@ -71,7 +81,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="ml-4 items-center custom-spacing ">
+            <div className={`ml-4 items-center xl:ml-[${spacing}px]`}>
                 <div className="text-[20px]">
                     {TAB_DATA.map((tabItem) => (
                         <TabButton 
@@ -83,7 +93,7 @@ const About = () => {
                         </TabButton>
                     ))}       
                 </div>
-                <div className="text-white mt-4">
+                <div className="text-white mt-4" ref={ref}>
                     {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
                         tab === "skills" ? (
                             index % 2 === 0 ? (
