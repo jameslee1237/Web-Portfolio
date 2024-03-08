@@ -57,9 +57,9 @@
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1280px) {
    .custom-spacing {
-      padding-left: 250px;
+      padding-left: 15vw;
    }
 }
 
