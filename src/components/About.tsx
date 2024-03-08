@@ -69,7 +69,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="items-center xl:ml-4">
+            <div className="items-center ml-4 2xl:ml-[150px]">
                 <div className="text-[20px]">
                     {TAB_DATA.map((tabItem) => (
                         <TabButton 
@@ -81,7 +81,7 @@ const About = () => {
                         </TabButton>
                     ))}       
                 </div>
-                <div className="text-white mt-4 flex justify-center">
+                <div className="text-white mt-4">
                     {TAB_DATA.find((t) => t.id === tab)?.content.map((item, index) => (
                         tab === "skills" ? (
                             index % 2 === 0 ? (
