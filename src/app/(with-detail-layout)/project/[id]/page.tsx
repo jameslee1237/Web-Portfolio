@@ -52,7 +52,9 @@ export default function ProjectDetailPage({
                         style: {
                             width: "100%",
                             maxWidth: "600px",
+                            minWidth: "300px",
                             maxHeight: "400px",
+                            minHeight: "200px",
                             aspectRatio: "3 / 2",
                             margin: "0 auto",
                         },
