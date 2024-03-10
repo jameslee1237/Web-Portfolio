@@ -40,10 +40,17 @@ export const skill_level = [
 export const projects = [
     {
         id: "1",
-        image: "Mobile Responsive Web Portfolio",
+        title: "Mobile Responsive Web Portfolio",
         start_date: "March 1, 2024",
         brief: "Create a mobile responsive web portfolio by modifying the existing web portfolio",
         skill: ["Next.js", "Typescript", "CSS"]
+    },
+    {
+        id: "2",
+        title: "Full stack social media app",
+        start_date: "March 11, 2014",
+        brief: "Create a social media app with certain functionalities",
+        skill: []
     },
 ]
 
