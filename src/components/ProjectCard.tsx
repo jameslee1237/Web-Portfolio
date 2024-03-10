@@ -7,7 +7,7 @@ const ProjectCard = ({
 }: {
     project: {
         id: string;
-        image: string;
+        title: string;
         start_date: string;
         brief: string;
         skill: string[];
@@ -40,7 +40,7 @@ const ProjectCard = ({
                     </div>
                 </div>
                 <div className="absolute top-3 left-4">
-                    <p className="text-[24px] font-bold text-black">{project.image}</p> 
+                    <p className="text-[24px] font-bold text-black">{project.title}</p> 
                 </div>
             </div>
         </div>
