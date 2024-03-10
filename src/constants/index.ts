@@ -45,13 +45,13 @@ export const projects = [
         brief: "Create a mobile responsive web portfolio by modifying the existing web portfolio",
         skill: ["Next.js", "Typescript", "CSS"]
     },
-    {
+    /*{
         id: "2",
         title: "Full stack social media app",
         start_date: "March 11, 2014",
         brief: "Create a social media app with certain functionalities",
         skill: []
-    },
+    },*/
 ]
 
 export const experienceDetails = [
