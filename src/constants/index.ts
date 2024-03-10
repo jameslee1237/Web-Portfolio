@@ -107,4 +107,11 @@ export const projectDetails = [
                     { src: "/Project1_Image8.png", width: 1920, height: 1020},
                 ]
     },
+    /*{
+        id: "2",
+        title: "Full Stack Social Media App",
+        description: "brief description for project 2",
+        FI: `Future Improvements`,
+        slides: [],
+    },*/
 ]
