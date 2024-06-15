@@ -27,7 +27,7 @@ const ProjectCard = ({
                     <p className="absolute left-2 top-5 text-[22px] font-bold text-black">{project.start_date}</p>
                     <p className="absolute mt-2 top-12 left-2 text-[18px] text-black">{project.brief}</p>
                 </div>
-                <div className="absolute bottom-4 left-2">
+                <div className="absolute bottom-4 left-2 max-w-[400px] overflow-y-auto">
                     <div className="flex">
                         {project.skill.map((s) => (
                             <div key={s} className="flex bg-green-100 items-center mr-4 custom-bar px-3 py-1">

@@ -40,11 +40,18 @@ export const skill_level = [
 export const projects = [
     {
         id: "1",
-        image: "Mobile Responsive Web Portfolio",
+        image: "Portfolio",
         start_date: "March 1, 2024",
-        brief: "Create a mobile responsive web portfolio by modifying the existing web portfolio",
+        brief: "Mobile responsive web portfolio using Next.js",
         skill: ["Next.js", "Typescript", "CSS"]
     },
+    {
+        id: "2",
+        image: "DreamCanvas",
+        start_date: "March 14, 2024",
+        brief: "Instagram-inspired social media platform using Next.js, Prisma and MongoDB",
+        skill: ["Next.js", "MongoDB", "Prisma"]
+    }
 ]
 
 export const experienceDetails = [
@@ -99,5 +106,21 @@ export const projectDetails = [
                     { src: "/Project1_Image7.png", width: 1920, height: 1020},
                     { src: "/Project1_Image8.png", width: 1920, height: 1020},
                 ]
+    },
+    {
+        id: "2",
+        title: "DreamCanvas", 
+        description: `DreamCanvas is a social media platform inspired by Instagram, designed to provide users with a platform to share their
+                      creative works and connect with other users. The platform is built using Next.js, Prisma, and MongoDB, and features a
+                      user-friendly interface that allows users to easily upload and share their content, follow other users, and interact with
+                      posts through likes and comments.`,
+        FI: `While DreamCanvas provides a user-friendly platform for sharing and connecting with other users, the platform could be further
+             enhanced by implementing security measures such as utilziing tokens for HTTP requests and encrypting user data to protect user privacy.
+             Additionally, implementing a more robust notification system to alert users of new likes, comments, and followers would enhance the user experience`,
+        slides: [
+            { src: "/Project2_Image1.png", width: 1920, height: 1020},
+        ],
+        link: "https://dream-canvas-two.vercel.app"
+
     },
 ]
