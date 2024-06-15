@@ -19,6 +19,12 @@ export default function ProjectDetailPage({
   const [index, setIndex] = useState(0);
   const [navLink, setNavLink] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (ProjectDetail?.link && ProjectDetail.link !== "") {
+      setNavLink(ProjectDetail.link);
+    }
+  }, [ProjectDetail]);
+
   if (!ProjectDetail) {
     return (
       <div className="text-white text-[40px] text-center font-bold">
@@ -34,12 +40,6 @@ export default function ProjectDetailPage({
   const updateIndex = ({ index: current }: { index: number }) =>
     setIndex(current);
 
-  useEffect(() => {
-    if (link && link !== "") {
-      setNavLink(link);
-    }
-  }, [link]);
-
   return (
     <div className="text-center flex-col" style={{ width: "100vw" }}>
       {navLink && navLink !== "" ? (
@@ -47,8 +47,7 @@ export default function ProjectDetailPage({
           <p className="font-bold text-4xl text-white mt-16 mb-8 mx-4 hover:text-[#7eff68]">
             DreamCanvas
           </p>
-        </Link> 
-
+        </Link>
       ) : (
         <div
           className="text-white text-4xl font-bold mt-16 mb-8 mx-4"
