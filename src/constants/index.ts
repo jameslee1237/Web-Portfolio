@@ -58,9 +58,8 @@ export const experienceDetails = [
     {
         id: "1",
         title: "Database Administrator",
-        description: [`Responsible for inspection and maintenance of different servers including database server
-                       on a daily basis including backup for server for recovery procedures with minimum loss of 
-                       information`, "Manage control of access to the network and server via allocation of user access rights",
+        description: [`Responsible for inspection and maintenance of different servers and designated intranet web pages on a
+                        daily basis`, "Manage control of access to the network and server via allocation of user access rights",
                        "Provide assistance in management of IP address for specific devices in the network",
                        "Utilize various software and hardware for configuration of new devices and maintenance of existing computers and devices.",
                        "Train other members in security policies and procedures",
