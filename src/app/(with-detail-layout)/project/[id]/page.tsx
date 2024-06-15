@@ -29,16 +29,16 @@ export default function ProjectDetailPage({
 
   const { title, description, slides, FI, link } = ProjectDetail;
 
+  const toggleOpen = (state: boolean) => () => setOpen(state);
+
+  const updateIndex = ({ index: current }: { index: number }) =>
+    setIndex(current);
+
   useEffect(() => {
     if (link && link !== "") {
       setNavLink(link);
     }
   }, [link]);
-
-  const toggleOpen = (state: boolean) => () => setOpen(state);
-
-  const updateIndex = ({ index: current }: { index: number }) =>
-    setIndex(current);
 
   return (
     <div className="text-center flex-col" style={{ width: "100vw" }}>
@@ -48,7 +48,7 @@ export default function ProjectDetailPage({
             DreamCanvas
           </p>
         </Link> 
-        
+
       ) : (
         <div
           className="text-white text-4xl font-bold mt-16 mb-8 mx-4"
