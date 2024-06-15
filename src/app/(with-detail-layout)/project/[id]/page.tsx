@@ -47,7 +47,8 @@ export default function ProjectDetailPage({
           <p className="font-bold text-4xl text-white mt-16 mb-8 mx-4 hover:text-[#7eff68]">
             DreamCanvas
           </p>
-        </Link>
+        </Link> 
+        
       ) : (
         <div
           className="text-white text-4xl font-bold mt-16 mb-8 mx-4"
