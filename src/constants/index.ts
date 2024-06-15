@@ -105,7 +105,8 @@ export const projectDetails = [
                     { src: "/Project1_Image6.png", width: 1920, height: 1020},
                     { src: "/Project1_Image7.png", width: 1920, height: 1020},
                     { src: "/Project1_Image8.png", width: 1920, height: 1020},
-                ]
+                ],
+        link: ""
     },
     {
         id: "2",
