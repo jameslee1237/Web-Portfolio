@@ -40,14 +40,14 @@ export const skill_level = [
 export const projects = [
     {
         id: "1",
-        image: "Portfolio",
+        title: "Portfolio",
         start_date: "March 1, 2024",
         brief: "Mobile responsive web portfolio using Next.js",
         skill: ["Next.js", "Typescript", "CSS"]
     },
     {
         id: "2",
-        image: "DreamCanvas",
+        title: "DreamCanvas",
         start_date: "March 14, 2024",
         brief: "Instagram-inspired social media platform using Next.js, Prisma and MongoDB",
         skill: ["Next.js", "MongoDB", "Prisma"]
