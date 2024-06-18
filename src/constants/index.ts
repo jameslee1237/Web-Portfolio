@@ -119,6 +119,12 @@ export const projectDetails = [
              Additionally, implementing a more robust notification system to alert users of new likes, comments, and followers would enhance the user experience`,
         slides: [
             { src: "/Project2_Image1.png", width: 1920, height: 1020},
+            { src: "/Project2_Image2.png", width: 1920, height: 1020},
+            { src: "/Project2_Image3.png", width: 1920, height: 1020},
+            { src: "/Project2_Image4.png", width: 1920, height: 1020},
+            { src: "/Project2_Image5.png", width: 1920, height: 1020},
+            { src: "/Project2_Image6.png", width: 1920, height: 1020},
+            { src: "/Project2_Image7.png", width: 1920, height: 1020},
         ],
         link: "https://dream-canvas-two.vercel.app"
 
